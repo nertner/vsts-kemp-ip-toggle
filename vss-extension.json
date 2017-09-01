@@ -1,0 +1,45 @@
+{
+    "manifestVersion": 1,
+    "id": "load-balancer-real-server-ip-toggle",
+    "name": "Load Balancer Real Server IP Toggle",
+    "version": "0.4.1",
+    "publisher": "sevencornersinc",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "description": "Enable or disable Real Server IPs in a Kemp Load Balancer",
+    "categories": [
+        "Build and release"
+    ],
+    "icons": {
+        "default": "extension-icon.png"
+    },
+    "content": {
+        "details": {
+            "path": "overview.md"
+        }
+    },
+    "files": [
+        {
+            "path": "loadBalancerRealServerIPToggle"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/SevenCorners/vsts-kemp-ip-toggle"
+    },
+    "contributions": [
+        {
+            "id": "load-balancer-real-server-ip-toggle",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "loadBalancerRealServerIPToggle"
+            }
+        }
+    ]
+}
