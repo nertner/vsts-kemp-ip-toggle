@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "load-balancer-real-server-ip-toggle",
     "name": "Load Balancer Real Server IP Toggle",
-    "version": "0.4.1",
+    "version": "1.0.0",
     "publisher": "sevencornersinc",
     "targets": [
         {
@@ -12,6 +12,9 @@
     "description": "Enable or disable Real Server IPs in a Kemp Load Balancer",
     "categories": [
         "Build and release"
+    ],
+    "galleryFlags": [
+        "Public"
     ],
     "icons": {
         "default": "extension-icon.png"
