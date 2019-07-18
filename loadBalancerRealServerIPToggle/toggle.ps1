@@ -30,7 +30,7 @@ function ToggleAddresses() {
             "?rs=$realIP"
 
         try {
-            $response = Invoke-WebRequest -Uri $uri -Headers $auth -Method Get -UseBasicParsing
+            $response = Invoke-WebRequest -Uri $uri -Headers $auth -Method Get -UseBasicParsing -SkipCertificateCheck
             if ($response.StatusCode -eq 200) { Write-Host "OK" -ForegroundColor Green }
         }
         catch {
